@@ -1,9 +1,5 @@
 <script lang="ts">
-    import '../app.css';
-
-    let a: number = 12;
-
-   
+    import '../app.css';   
 </script>
 
 <slot></slot>

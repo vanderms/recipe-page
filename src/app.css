@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--base-50: #fff;
+
+		--neutral-200: #e3ddd7;
+		--neutral-600: #5f564d;
+		--neutral-800: #312e2c;
+
+		--primary-100: #f3e5d7;
+		--primary-800: #854632;
+
+		--secondary-100: #fff7fb;
+		--secondary-800: #7a284e;
+	}
+}
+
+@layer components {
+	.heading-l {
+		@apply font-serif leading-none;
+
+		font-size: 2.25rem;
+
+		@screen md {
+			font-size: 2.5rem;
+		}
+	}
+
+	.heading-m {
+		@apply font-serif leading-none;
+		font-size: 1.75rem;
+	}
+
+	.heading-s {
+		@apply font-sans leading-none text-xl font-semibold;
+	}
+
+	.body-regular {
+		@apply font-sans text-base font-normal;
+	}
+
+	.body-bold {
+		@apply font-sans text-base font-bold;
+	}
+
+	.marked-list__item {
+		margin-left: 0.5rem;
+		display: grid;
+		grid-template-columns: 1rem 1fr;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.table-row-border td,
+	.table-row-border th {
+		border-bottom: 1px solid var(--neutral-200);
+	}
+}
