@@ -1,5 +1,9 @@
 <script lang="ts">
-    import '../app.css';   
+	import '../app.css';
 </script>
 
-<slot></slot>
+<svelte:head>
+	<title>Recipe Page</title>
+</svelte:head>
+
+<slot />
